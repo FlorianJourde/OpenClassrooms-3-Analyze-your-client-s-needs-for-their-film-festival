@@ -12,23 +12,26 @@
   <title>Les Films de Plein Air</title>
 </head>
 <body>
-  <nav class="navbar">
+  <nav id="navbar">
     <div class="wrapper">
-      <button href="#movies" class="programmation">Programmation</button>
-      <img class="site-logo" src="images/movie-night-logo.png" alt="">
-      <img class="menu" src="images/icon-menu.png" alt="">
+      <a href="#banner" class="white-text small-translate">Introduction</a>
+      <a href="#about" class="white-text small-translate">À propos</a>
+      <a href="#"><img class="site-logo" src="images/movie-night-logo.png" alt=""></a>
+      <a href="#movies" class="white-text small-translate">Films à l'affiche</a>
+      <a href="#pre-booking" class="white-text small-translate">Pré-réservations</a>
     </div>
   </nav>
-  <img class="separator" src="images/pellicule-2.png" alt="">
-  <section class="banner">
+    <img class="separator" src="images/pellicule-2.png" alt="">
+  </div>
+  <section id="banner">
     <div class="wrapper">
       <h1>Les Films de Plein Air</h1>
     </div>
   </section>
   <img class="separator" src="images/pellicule.png" alt="">
-  <section class="about">
+  <section id="about">
     <div class="wrapper">
-      <img class="illustration" src="images/festival-films-night.jpg" alt="">
+      <img class="illustration white-frame" src="images/festival-films-night.jpg" alt="">
       <div class="content">
         <h2>À propos du festival</h2>
         <p>L’association « Les Films de Plein Air » a pour but de faire découvrir ou redécouvrir des films d’auteur au grand public via une projection en plein air.</p>
@@ -38,51 +41,60 @@
     </div>
   </section>
   <img class="separator" src="images/pellicule-2.png" alt="">
-  <section id="movies" class="movies">
+  <section id="movies">
     <div class="wrapper">
       <div class="movie-card">
-        <img src="images/affiche-1.jpg" alt="">
-        <h3>Onoda</h3>
+        <a href="./modal.html">
+          <img class="translate" src="images/affiche-1.jpg" alt="">
+          <h3>Onoda</h3>
+        </a>
       </div>
       <div class="movie-card">
-        <img src="images/affiche-2.jpg" alt="">
-        <h3>Capharnaüm</h3>
+        <a href="./modal.html">
+          <img class="translate" src="images/affiche-2.jpg" alt="">
+          <h3>Capharnaüm</h3>
+        </a>
       </div>
       <div class="movie-card">
-        <img src="images/affiche-3.jpg" alt="">
-        <h3>Titane</h3>
+        <a href="./modal.html">
+          <img class="translate" src="images/affiche-3.jpg" alt="">
+          <h3>Titane</h3>
+        </a>
       </div>
       <div class="movie-card">
-        <img src="images/affiche-6.jpeg" alt="">
-        <h3>Les misérables</h3>
+        <a href="./modal.html">
+          <img class="translate" src="images/affiche-6.jpeg" alt="">
+          <h3>Les misérables</h3>
+        </a>
       </div>
       <div class="movie-card">
-        <img src="images/affiche-5.jpg" alt="">
-        <h3>Petite fille</h3>
+        <a href="./modal.html">
+          <img class="translate" src="images/affiche-5.jpg" alt="">
+          <h3>Petite fille</h3>
+        </a>
       </div>
     </div>
   </section>
   <img class="separator" src="images/pellicule.png" alt="">
-  <section class="pre-booking">
+  <section id="pre-booking">
     <div class="wrapper">
       <div class="content">
         <h2>Pré-réservations</h2>
         <form action="">
-          <input type="text">
-          <input type="text">
-          <input type="text">
+          <input placeholder="Nom" type="text">
+          <input placeholder="Prénom" type="text">
+          <input placeholder="Email" type="text">
           <button>Pré-réserver</button>
         </form>
       </div>
-      <img class="illustration" src="images/vector-ticket-3.png" alt="">
     </div>
   </section>
   <img class="separator" src="images/pellicule-2.png" alt="">
   <footer>
     <div class="wrapper">
-      <p class="contact">Les Films de Plein Air</p>
-      <img class="site-logo" src="images/movie-night-logo.png" alt="">
-      <p>© Florian Jourde</p>
+      <a href="#" class="contact small-translate">Les Films de Plein Air</a>
+      <a href="#"><img class="site-logo" src="images/movie-night-logo.png" alt=""></a>
+      <a href="https://github.com/FlorianJourde" class="small-translate">© Florian Jourde</a>
     </div>
   </footer>
 </body>

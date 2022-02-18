@@ -8,4 +8,4 @@ Third project of PHP/Symfony journey to learn web development with OpenClassroom
 
 **InDesign, HTML, CSS**
 
-[Preview-site](https://github.com/florianjourde)
+[Preview-site](http://les-films-de-plein-air.florian-jourde.fr/index.html)
