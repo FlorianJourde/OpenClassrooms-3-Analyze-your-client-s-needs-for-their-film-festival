@@ -7,9 +7,10 @@
   --clr-dark-purple: #602166;
   --clr-yellow: #FFB46C;
   --clr-dark-yellow: #cc8f56;
-  --clr-light-grey: #EDE7D1;
   --clr-white: white;
   --clr-black: black;
+  --clr-light-grey: #EDE7D1;
+  --clr-grey: #777;
   --clr-dark-grey: #333333;
   --clr-very-dark-grey: #262626;
   --clr-transparent-grey: hsla(0, 0%, 0%, 0.25);;
@@ -189,6 +190,7 @@ section {
   filter: var(--fi-primary);
   z-index: 1;
   position: relative;
+  transition: unset;
 }
 
 #about {
@@ -267,7 +269,7 @@ section {
 }
 
 #pre-booking .content {
-  width: 50%;
+  max-width: 600px;
 }
 
 #pre-booking form {
@@ -295,11 +297,19 @@ footer {
   align-items: center;
 }
 
+footer a {
+  color:  var(--clr-grey);
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
 footer .site-logo {
   width:  150px;
 }
 
-section#modal {
+footer .rgpd {
+  display: flex;
+  flex-direction: column;
 }
 
 #modal {
@@ -369,4 +379,111 @@ section#modal {
   position: absolute;
   right: 50px;
   top: 50px;
+}
+
+@media (max-width: 2000px) {
+  .separator {
+    margin-top: -200px;
+  }
+
+  section {
+    margin-top: -200px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .separator {
+    margin-top: -180px;
+  }
+
+  section {
+    margin-top: -180px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .separator {
+    margin-top: -160px;
+  }
+
+  section {
+    margin-top: -160px;
+  }
+
+  footer {
+    padding: 200px 0 40px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .separator {
+    margin-top: -140px;
+  }
+
+  section {
+    margin-top: -140px;
+    padding: 250px 0;
+  }
+
+  #navbar {
+    padding: 40px 0 120px 0;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    align-items: unset;
+  }
+
+  #about .illustration {
+    width: auto;
+  }
+
+  #about .content {
+    margin-bottom: 100px;
+    padding-left: unset;
+  }
+
+  footer {
+    padding: 220px 0 40px 0;
+  }
+
+  #modal .content {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .separator {
+    margin-top: -120px;
+  }
+
+  section {
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .separator {
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -100px;
+  }
+
+  section {
+    margin-top: -100px;
+    padding: 200px 0;
+  }
+
+  #navbar, footer {
+    justify-content: center;
+  }
+
+  #navbar .white-text, footer .small-translate {
+    display: none;
+  }
+
+  #modal .content {
+    padding-right: 50px;
+  }
 }
