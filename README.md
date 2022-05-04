@@ -8,4 +8,4 @@ Third project of PHP/Symfony journey to learn web development with OpenClassroom
 
 **InDesign, HTML, CSS**
 
-[Preview-site](chaletsetcaviar.florianjourde.com/)
+[Preview-site](http://chaletsetcaviar.florianjourde.com/)
