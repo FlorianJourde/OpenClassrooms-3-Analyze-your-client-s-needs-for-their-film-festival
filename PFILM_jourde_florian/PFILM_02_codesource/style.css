@@ -14,8 +14,8 @@
   --clr-dark-grey: #333333;
   --clr-very-dark-grey: #262626;
   --clr-transparent-grey: hsla(0, 0%, 0%, 0.25);;
-  --ff-primary: Eastman Trial, sans-serif;
-  --ff-secondary: Lexend Deca, sans-serif;
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Lexend Deca", sans-serif;
   --fs-primary: 80px;
   --fs-secondary: 50px;
   --bs-primary: 0 10px hsla(0, 0%, 0%, 0.25);
@@ -26,6 +26,20 @@
 
 ::selection {
   background-color: var(--clr-yellow);
+}
+
+@font-face {
+  font-family: "Eastman Trial";
+  src: url("/fonts/eastmantrial-bold-webfont.woff2") format("woff2"),
+  url("/fonts/eastmantrial-bold-webfont.woff") format("woff"),
+  url("/fonts/EastmanTrial-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("/fonts/lexenddeca-variablefont_wght-webfont.woff2") format("woff2"),
+  url("/fonts/lexenddeca-variablefont_wght-webfont.woff") format("woff"),
+  url("/fonts/LexendDeca-VariableFont_wght.ttf") format("ttf");
 }
 
 * {
@@ -50,6 +64,7 @@ body {
   background-color: var(--clr-dark-grey);
   font-family: var(--ff-secondary);
   color: var(--clr-white);
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
