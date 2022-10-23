@@ -463,6 +463,11 @@ footer .rgpd {
 }
 
 @media (max-width: 1000px) {
+  :root {
+    --fs-primary: 60px;
+    --fs-secondary : 40px;
+  }
+
   .separator {
     width: 1000px;
     left: 50%;
@@ -470,9 +475,13 @@ footer .rgpd {
     margin-top: -100px;
   }
 
+  .movie-card {
+    display: none;
+  }
+
   section {
     margin-top: -100px;
-    padding: 200px 0;
+    padding: 150px 0;
   }
 
   #navbar, footer {
