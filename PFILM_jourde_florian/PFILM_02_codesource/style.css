@@ -1,4 +1,5 @@
-:root {
+:root
+{
   --clr-red: #FF554D;
   --clr-dark-red: #b03b35;
   --clr-blue: #1E72B0;
@@ -13,7 +14,7 @@
   --clr-grey: #777;
   --clr-dark-grey: #333333;
   --clr-very-dark-grey: #262626;
-  --clr-transparent-grey: hsla(0, 0%, 0%, 0.25);;
+  --clr-transparent-grey: hsla(0, 0%, 0%, 0.25);
   --ff-primary: "Lexend Deca", sans-serif;
   --ff-secondary: "Lexend Deca", sans-serif;
   --fs-primary: 80px;
@@ -24,39 +25,49 @@
   --fi-primary: drop-shadow(0 6px hsla(0, 0%, 0%, 0.25));
 }
 
-::selection {
+::selection
+{
   background-color: var(--clr-yellow);
 }
 
-@font-face {
+/* @font-face
+{
   font-family: "Eastman Trial";
   src: url("/fonts/eastmantrial-bold-webfont.woff2") format("woff2"),
-  url("/fonts/eastmantrial-bold-webfont.woff") format("woff"),
-  url("/fonts/EastmanTrial-Bold.otf") format("otf");
+    url("/fonts/eastmantrial-bold-webfont.woff") format("woff"),
+    url("/fonts/EastmanTrial-Bold.otf") format("otf");
 }
 
-@font-face {
+@font-face
+{
   font-family: "Lexend Deca";
   src: url("/fonts/lexenddeca-variablefont_wght-webfont.woff2") format("woff2"),
-  url("/fonts/lexenddeca-variablefont_wght-webfont.woff") format("woff"),
-  url("/fonts/LexendDeca-VariableFont_wght.ttf") format("ttf");
-}
+    url("/fonts/lexenddeca-variablefont_wght-webfont.woff") format("woff"),
+    url("/fonts/LexendDeca-VariableFont_wght.ttf") format("ttf");
+} */
 
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html
+{
   scroll-behavior: smooth;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select
+{
   font: inherit;
 }
 
-body {
+body
+{
   font-size: 18px;
   min-height: 100vh;
   position: relative;
@@ -67,7 +78,10 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3
+{
   font-family: var(--ff-primary);
   text-transform: uppercase;
   color: var(--clr-white);
@@ -75,67 +89,89 @@ h1, h2, h3 {
   line-height: 1.5em;
 }
 
-h2, h3 {
+h2,
+h3
+{
   margin-bottom: 0.5em;
 }
 
-h1 {
+h1
+{
   font-size: var(--fs-primary);
   text-shadow: 6px 6px hsla(0, 0%, 0%, 0.25);
 }
 
-h2 {
+h2
+{
   font-size: var(--fs-secondary);
 }
 
-p {
+p
+{
   margin-bottom: 1em;
 }
 
-a {
+a
+{
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-white);
 }
 
-.small-translate:hover {
+.small-translate:hover
+{
   transform: translateY(-2px);
   text-shadow: 0 2px hsla(0, 0%, 0%, 0.25);
   color: var(--clr-yellow);
 }
 
-.translate:hover {
+.translate:hover
+{
   transform: translateY(-5px);
   text-shadow: var(--bs-secondary);
 }
 
 button {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+.button
+{
   background-color: var(--clr-transparent-grey);
   padding: 1em 2em;
   border: none;
-  cursor: pointer;
   text-transform: uppercase;
   color: var(--clr-white);
   width: fit-content;
 }
 
-button:hover, #modal .actor:hover {
+.button:hover,
+#modal .actor:hover
+{
   background-color: var(--clr-dark-grey);
 }
 
-button, a, img {
+button,
+a,
+img
+{
   transition: .4s;
 }
 
-.white-text {
+.white-text
+{
   color: var(--clr-white);
 }
 
-.white-frame {
+.white-frame
+{
   border: 10px solid var(--clr-white);
 }
 
-.wrapper {
+.wrapper
+{
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -151,12 +187,14 @@ button, a, img {
   gap: inherit;
 }
 
-section {
+section
+{
   margin-top: -220px;
   padding: 300px 0;
 }
 
-#navbar {
+#navbar
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,20 +202,23 @@ section {
   padding: 40px 0 180px 0;
 }
 
-.site-logo {
+.site-logo
+{
   width: 200px;
   height: auto;
   object-fit: contain;
   filter: var(--fi-primary);
 }
 
-.menu {
+.menu
+{
   width: 30px;
   height: 30px;
   object-fit: contain;
 }
 
-#banner {
+#banner
+{
   background-image: url("images/open-air-cinema.png");
   background-size: cover;
   background-position: center;
@@ -186,7 +227,8 @@ section {
   position: relative;
 }
 
-#banner::before {
+#banner::before
+{
   content: "";
   width: 100%;
   height: 100%;
@@ -194,11 +236,13 @@ section {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
-#banner h1 {
+#banner h1
+{
   width: 600px;
 }
 
-.separator {
+.separator
+{
   width: 100%;
   height: auto;
   margin-top: -220px;
@@ -208,29 +252,31 @@ section {
   transition: unset;
 }
 
-#about {
+#about
+{
   background: linear-gradient(135deg, var(--clr-red), var(--clr-dark-red));
   display: flex;
   align-items: center;
 }
 
-#about h2 {
-}
-
-#about .illustration {
+#about .illustration
+{
   width: 50%;
   box-shadow: var(--bs-primary);
 }
 
-#about .content {
+#about .content
+{
   padding-left: 150px;
 }
 
-#about button {
+#about button
+{
   margin-top: 1em;
 }
 
-#movies {
+#movies
+{
   background: linear-gradient(225deg, var(--clr-blue), var(--clr-dark-blue));
   display: flex;
   justify-content: center;
@@ -238,19 +284,23 @@ section {
   flex-wrap: wrap;
 }
 
-.movie-card {
+.movie-card
+{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
 
-#movies img {
+#movies img
+{
   box-shadow: var(--bs-secondary);
   margin-bottom: 1.5em;
 }
 
-#movies img, #modal .movie-illustration {
+#movies img,
+#modal .movie-illustration
+{
   box-shadow: var(--bs-secondary);
   border: 10px solid var(--clr-white);
   width: 100%;
@@ -259,12 +309,15 @@ section {
   cursor: pointer;
 }
 
-#movies img:hover, #modal .movie-illustration:hover {
+#movies img:hover,
+#modal .movie-illustration:hover
+{
   box-shadow: var(--bs-primary);
 }
 
-#pre-booking {
-  background-image: url("images/vector-ticket-3.png");
+#pre-booking
+{
+  background-image: url("images/vector-ticket-4.png");
   background-repeat: no-repeat;
   background-size: 1400px;
   background-position: top 50% right -180px;
@@ -272,7 +325,8 @@ section {
   position: relative;
 }
 
-#pre-booking:before {
+#pre-booking:before
+{
   content: "";
   background: linear-gradient(135deg, var(--clr-purple), var(--clr-dark-purple));
   opacity: 0.8;
@@ -283,26 +337,27 @@ section {
   height: 100%;
 }
 
-#pre-booking .content {
+#pre-booking .content
+{
   max-width: 600px;
 }
 
-#pre-booking form {
+#pre-booking form
+{
   display: flex;
   flex-direction: column;
 }
 
-#pre-booking .illustration {
-}
-
-#pre-booking form input {
+#pre-booking form input
+{
   margin-bottom: 30px;
   border: 0;
   padding: 12px 24px;
   box-shadow: var(--bs-secondary);
 }
 
-footer {
+footer
+{
   background: linear-gradient(225deg, var(--clr-dark-grey), var(--clr-very-dark-grey));
   color: var(--clr-white);
   margin-top: -220px;
@@ -312,22 +367,26 @@ footer {
   align-items: center;
 }
 
-footer a {
-  color:  var(--clr-grey);
+footer a
+{
+  color: var(--clr-grey);
   font-size: 0.8em;
   line-height: 2em;
 }
 
-footer .site-logo {
-  width:  150px;
+footer .site-logo
+{
+  width: 150px;
 }
 
-footer .rgpd {
+footer .rgpd
+{
   display: flex;
   flex-direction: column;
 }
 
-#modal {
+#modal
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -342,44 +401,57 @@ footer .rgpd {
   z-index: 1;
 }
 
-#modal .content {
-  flex-grow: 1;
-  width: 50%;
-  padding-right: 200px;
-}
+// #modal .content
+// {
+//   flex-grow: 1;
+//   width: 50%;
+//   padding-right: 200px;
+// }
 
-#modal h1, #modal h2, #modal h3, #modal p {
+#modal h1,
+#modal h2,
+#modal h3,
+#modal p
+{
   color: var(--clr-dark-grey);
 }
 
-#modal h2 {
+#modal h2
+{
   color: var(--clr-blue);
 }
 
-#modal h3 {
+#modal h3
+{
   font-family: var(--ff-secondary);
 }
 
-#modal .movie-info {
+#modal .movie-info
+{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-#modal .movie-info p {
+#modal .movie-info p
+{
   flex-grow: 1;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  // margin-left: 20px;
+  // margin-bottom: 10px;
 }
 
-#modal .actors {
+#modal .actors
+{
   display: flex;
-  margin-top: 50px;
+  // margin-top: 50px;
   flex-wrap: wrap;
   gap: 25px;
 }
 
-#modal .actor {
+#modal .actor
+{
   text-transform: uppercase;
   background-color: var(--clr-blue);
   color: var(--clr-white);
@@ -387,7 +459,8 @@ footer .rgpd {
   margin-bottom: 0;
 }
 
-#modal .icon {
+#modal .icon
+{
   width: 30px;
   height: auto;
   object-fit: contain;
@@ -396,118 +469,140 @@ footer .rgpd {
   top: 50px;
 }
 
-@media (max-width: 2000px) {
-  .separator {
+@media (max-width: 2000px)
+{
+  .separator
+  {
     margin-top: -200px;
   }
 
-  section {
+  section
+  {
     margin-top: -200px;
   }
 }
 
-@media (max-width: 1800px) {
-  .separator {
+@media (max-width: 1800px)
+{
+  .separator
+  {
     margin-top: -180px;
   }
 
-  section {
+  section
+  {
     margin-top: -180px;
   }
 }
 
-@media (max-width: 1600px) {
-  .separator {
+@media (max-width: 1600px)
+{
+  .separator
+  {
     margin-top: -160px;
   }
 
-  section {
+  section
+  {
     margin-top: -160px;
   }
 
-  footer {
+  footer
+  {
     padding: 200px 0 40px 0;
   }
 }
 
-@media (max-width: 1400px) {
-  .separator {
+@media (max-width: 1400px)
+{
+  .separator
+  {
     margin-top: -140px;
   }
 
-  section {
+  section
+  {
     margin-top: -140px;
     padding: 250px 0;
   }
 
-  #navbar {
+  #navbar
+  {
     padding: 40px 0 120px 0;
   }
 
-  #about {
+  #about
+  {
     flex-direction: column-reverse;
     align-items: unset;
   }
 
-  #about .illustration {
+  #about .illustration
+  {
     width: auto;
   }
 
-  #about .content {
+  #about .content
+  {
     margin-bottom: 100px;
     padding-left: unset;
   }
 
-  footer {
+  footer
+  {
     padding: 220px 0 40px 0;
   }
 
-  #modal .content {
-    padding-right: 100px;
-  }
+  // #modal .content
+  // {
+  //   padding-right: 100px;
+  // }
 }
 
-@media (max-width: 1200px) {
-  .separator {
+@media (max-width: 1200px)
+{
+  .separator
+  {
     margin-top: -120px;
   }
 
-  section {
+  section
+  {
     margin-top: -120px;
   }
 }
 
-@media (max-width: 1000px) {
-  :root {
+@media (max-width: 1000px)
+{
+  :root
+  {
     --fs-primary: 60px;
-    --fs-secondary : 40px;
+    --fs-secondary: 40px;
   }
 
-  .separator {
+  .separator
+  {
     width: 1000px;
     left: 50%;
     transform: translateX(-50%);
     margin-top: -100px;
   }
 
-  #modal .movie-card {
-    display: none;
-  }
-
-  section {
+  section
+  {
     margin-top: -100px;
     padding: 150px 0;
   }
 
-  #navbar, footer {
+  #navbar,
+  footer
+  {
     justify-content: center;
   }
 
-  #navbar .white-text, footer .small-translate {
+  #navbar .white-text,
+  footer .small-translate
+  {
     display: none;
-  }
-
-  #modal .content {
-    padding-right: 50px;
   }
 }
