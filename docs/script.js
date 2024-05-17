@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function fetchDatas(index) {
         const modalContent = document.querySelector('.modal-content');
         const movieTitle = modalContent.querySelector('.movie-title');
+        const movieDirector = modalContent.querySelector('.movie-director');
+        const movieYear = modalContent.querySelector('.movie-year');
         const movieDescription = modalContent.querySelector('.movie-description');
         const movieLink = modalContent.querySelector('.movie-link');
         const movieIllustrationLink = modalContent.querySelector('.movie-illustration-link');
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(data => {
 
                 movieTitle.textContent = data[index].title;
+                movieDirector.textContent = data[index].director;
+                movieYear.textContent = data[index].year;
                 movieLink.href = data[index].url;
                 movieDescription.textContent = data[index].description;
                 movieIllustration.src = `images/affiches/${data[index].illustration}`;
