@@ -148,7 +148,7 @@ button {
 }
 
 .button:hover,
-#modal .actor:hover
+.modal-content .actor:hover
 {
   background-color: var(--clr-dark-grey);
 }
@@ -299,7 +299,7 @@ section
 }
 
 #movies img,
-#modal .movie-illustration
+.modal-content .movie-illustration
 {
   box-shadow: var(--bs-secondary);
   border: 10px solid var(--clr-white);
@@ -310,7 +310,7 @@ section
 }
 
 #movies img:hover,
-#modal .movie-illustration:hover
+.modal-content .movie-illustration:hover
 {
   box-shadow: var(--bs-primary);
 }
@@ -383,90 +383,6 @@ footer .rgpd
 {
   display: flex;
   flex-direction: column;
-}
-
-#modal
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0;
-  padding: 100px 0;
-  background-color: var(--clr-white);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: var(--bs-tertiary);
-  z-index: 1;
-}
-
-// #modal .content
-// {
-//   flex-grow: 1;
-//   width: 50%;
-//   padding-right: 200px;
-// }
-
-#modal h1,
-#modal h2,
-#modal h3,
-#modal p
-{
-  color: var(--clr-dark-grey);
-}
-
-#modal h2
-{
-  color: var(--clr-blue);
-}
-
-#modal h3
-{
-  font-family: var(--ff-secondary);
-}
-
-#modal .movie-info
-{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#modal .movie-info p
-{
-  flex-grow: 1;
-  // margin-left: 20px;
-  // margin-bottom: 10px;
-}
-
-#modal .actors
-{
-  display: flex;
-  // margin-top: 50px;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-#modal .actor
-{
-  text-transform: uppercase;
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
-  padding: 10px 20px;
-  margin-bottom: 0;
-}
-
-#modal .icon
-{
-  width: 30px;
-  height: auto;
-  object-fit: contain;
-  position: absolute;
-  right: 50px;
-  top: 50px;
 }
 
 @media (max-width: 2000px)
@@ -552,11 +468,11 @@ footer .rgpd
   {
     padding: 220px 0 40px 0;
   }
-
-  // #modal .content
+/* 
+  // .modal-content .content
   // {
   //   padding-right: 100px;
-  // }
+  // } */
 }
 
 @media (max-width: 1200px)
