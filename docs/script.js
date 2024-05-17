@@ -26,6 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.body.addEventListener('keydown', function (e) {
+        if (body.classList.contains('modal-open') & !(body.classList.contains('modal-translating'))) {
+            if (e.key == "Escape") {
+                closeModal();
+                translateModal();
+            }
+        }
+    });
+
     function fetchDatas(index) {
         const modalContent = document.querySelector('.modal-content');
         const movieTitle = modalContent.querySelector('.movie-title');
