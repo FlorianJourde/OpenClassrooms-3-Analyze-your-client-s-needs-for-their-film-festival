@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function fetchDatas(index) {
-        const modalContainer = document.body.appendChild(modalTemplate.content.cloneNode(true));
+        document.body.appendChild(modalTemplate.content.cloneNode(true));
 
         const modalContent = document.querySelector('.modal-content');
         const movieTitle = modalContent.querySelector('.movie-title');

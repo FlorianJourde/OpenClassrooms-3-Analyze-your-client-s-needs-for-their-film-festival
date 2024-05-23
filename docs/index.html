@@ -121,27 +121,31 @@
   </footer>
   <template id="modal">
     <div class="modal-content">
-      <button class="close-button">
-        <img class="icon" src="images/close-icon.png" alt="">
-      </button>
       <div class="wrapper">
-        <div class="content">
-          <div class="description">
-            <div class="movie-info">
+        <div class="modal-container">
+          <div class="movie-header">
+            <button class="close-button">
+              <img class="icon" src="images/close-icon.png" alt="">
+            </button>
+            <div class="movie-header-content">
               <a class="movie-link" href="#" target="_blank">
                 <h2 class="movie-title"></h2>
               </a>
               <p>De <span class="movie-director"></span></p>
               <h3 class="movie-year"></h3>
             </div>
-            <p class="movie-description"></p>
-            <div class="actors">
-            </div>
           </div>
-          <div class="image">
-            <div class="movie-card">
-              <a class="movie-illustration-link" href="#" target="_blank"><img class="movie-illustration translate"
-                  src="images/affiches/placeholder.jpg" alt=""></a>
+          <div class="movie-body">
+            <div class="movie-body-content">
+              <p class="movie-description"></p>
+              <div class="actors">
+              </div>
+            </div>
+            <div class="image">
+              <div class="movie-card">
+                <a class="movie-illustration-link" href="#" target="_blank"><img class="movie-illustration translate"
+                    src="images/affiches/placeholder.jpg" alt=""></a>
+              </div>
             </div>
           </div>
         </div>
