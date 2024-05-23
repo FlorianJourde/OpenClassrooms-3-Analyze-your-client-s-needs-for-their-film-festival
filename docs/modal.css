@@ -30,9 +30,6 @@ body.modal-open::after {
   width: 100%;
   box-shadow: var(--bs-tertiary);
   z-index: 1;
-}
-
-.modal-content {
   transform: translateY(calc(100% + 10px));
   transition: .4s;
   z-index: 2;
@@ -40,6 +37,9 @@ body.modal-open::after {
   display: block;
   overflow: auto;
 }
+
+/* .modal-content {
+} */
 
 .modal-content .description {
   display: flex;

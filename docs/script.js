@@ -2,13 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let body = document.querySelector('body');
     let movies = document.querySelectorAll('#movies .movie-card button');
     const modalTemplate = document.querySelector('#modal');
-    const modalContainer = document.body.appendChild(modalTemplate.content.cloneNode(true));
 
     movies.forEach((movie, index) => {
         movie.addEventListener('click', () => {
-            openModal();
-            translateModal();
             fetchDatas(index)
+            translateModal();
         })
     });
 
@@ -36,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function fetchDatas(index) {
+        const modalContainer = document.body.appendChild(modalTemplate.content.cloneNode(true));
+
         const modalContent = document.querySelector('.modal-content');
         const movieTitle = modalContent.querySelector('.movie-title');
         const movieDirector = modalContent.querySelector('.movie-director');
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-
                 movieTitle.textContent = data[index].title;
                 movieDirector.textContent = data[index].director;
                 movieYear.textContent = data[index].year;
@@ -68,21 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
             })
+            .then(() => {
+                body.classList.add('modal-open');
+            })
             .catch(error => console.error('Erreur lors du chargement des données JSON:', error));
-    }
-
-    function openModal() {
-        body.classList.add('modal-open');
     }
 
     function closeModal() {
         const modalContent = document.querySelector('.modal-content');
-        const actorsDiv = modalContent.querySelector('.actors');
 
         body.classList.remove('modal-open');
 
         setTimeout(() => {
-            actorsDiv.innerHTML = '';
+            modalContent.remove()
         }, "400");
     }
 
