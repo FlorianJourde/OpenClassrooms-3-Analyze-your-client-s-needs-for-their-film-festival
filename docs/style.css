@@ -403,6 +403,20 @@ footer .rgpd
   flex-direction: column;
 }
 
+.noise-texture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+  opacity: .1;
+  pointer-events: none;
+  transition: unset;
+}
+
 @media (max-width: 2000px)
 {
   .separator
